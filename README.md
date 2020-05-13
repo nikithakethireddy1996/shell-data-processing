@@ -2,6 +2,7 @@
 
 While creating this project , the first thing which I did was I have created a folder called 44517. The reason why I have named it as 44517 is because the course currently we are taking is Big-Data and it has the course number as 44517, so it would be easy for our reference.
 
+<h2> Creation of Project </h2>
 We have started a new project in that folder by opening that folder using the following steps:
 
 - I have opened the folder by right clicking on the folder and choosing "Open PowerShell window here as administrator" option.
@@ -32,16 +33,7 @@ We have started a new project in that folder by opening that folder using the fo
 
 NOTE: For all the above commands we should not place them in the double quotes in Powershell, if we do it shows the error messages.
 
-In order to view all the commands at a single place, I am providing the commands which I have used above at a single place in order without the description:
-     
-```
-mkdir shell-data-processing
-cd shell-data-processing
-ni README.md
-ni .gitignore
-ls 
-```
-    
+<h2> Curl Commands </h2>
 After completing the above process, I have started working with retrieval of text with curl, in order to perform this action , I have followed the below steps:
 
 - I have choosed the topic as "TikTok" and I have opened that in the wikipedia website. I have got a URL for the topic "TikTok" as "https://en.wikipedia.org/wiki/TikTok" and I have copied the URL.
@@ -61,4 +53,33 @@ curl "url" -O data.txt - this command is used for creatig a text file named as d
 - In order to exit from the Powershell , I have used the command as:
 ```
 "ALT+SPACE+C" - Used for exiting from the powershell.
+```
+
+<h2> Bash Commands </h2>
+
+I have used some of the bash commands to process the text, the commands which I have used are as following:
+
+- In order to transform each space into a return character, I have used the command as
+```
+tr ' ' '\12' < data.txt
+```
+
+- In the second step , I tried to sort the output and also to send the results of one command as input into another command, I have used 
+```
+tr ' ' '\12' < data.txt | sort
+```
+
+- In the third step, I have sorted based on the count , in order to perform that I used the command as 
+```
+tr ' ' '\12' < data.txt | sort | uniq -c
+```
+
+- In the fourth step , in order to pipe the reduced output to sort with -nr flag I used the command as
+```
+tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr
+```
+
+- Later, in order to redirect the result or the output to the result.txt file, I have used the command as
+```
+tr ' ' '\12' < data.txt | sort | uniq -c | sort -nr > result.txt
 ```
