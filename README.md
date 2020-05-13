@@ -42,21 +42,21 @@ ls
     
 After completing the above process, I have started working with retrieval of text with curl, in order to perform this action , I have followed the below steps:
 
-1. I have choosed the topic as "TikTok" and I have opened that in the wikipedia website. I have got a URL for the topic "TikTok" as "https://en.wikipedia.org/wiki/TikTok" and I have copied the URL.
+- I have choosed the topic as "TikTok" and I have opened that in the wikipedia website. I have got a URL for the topic "TikTok" as "https://en.wikipedia.org/wiki/TikTok" and I have copied the URL.
 
-1. I have used curl to return the page text, the command which I have used is 
+- I have used curl to return the page text, the command which I have used is 
 ```
 curl "URL" - This is the command used for returning the page text and in place of "URL" we need to paste the URL which we have copied in the above step and paste in between the quotes.
 ```
 
 NOTE: While performing this step I have encountered an exception called "WebCmdletWebResponseException" and inorder to overcome that error, I have used the command as "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12" and then followed the above step, and this worked.
 
-1. Later, I have used curl to return the page text and to copy the output to a file , the command which I used is:
+- Later, I have used curl to return the page text and to copy the output to a file , the command which I used is:
 ```
 curl "url" -O data.txt - this command is used for creatig a text file named as data.txt and copies the text into that file.
 ```
 
-1. In order to exit from the Powershell , I have used the command as:
+- In order to exit from the Powershell , I have used the command as:
 ```
 "ALT+SPACE+C" - Used for exiting from the powershell.
 ```
