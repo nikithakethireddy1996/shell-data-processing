@@ -2,29 +2,28 @@ While creating this project , the first thing which I did was I have created a f
 
 We have started a new project in that folder by opening that folder using the following steps:
 
-1. I have opened the folder by right clicking on the folder and choosing "Open PowerShell window here as administrator" option.
+- I have opened the folder by right clicking on the folder and choosing "Open PowerShell window here as administrator" option.
 
-1. After opening the folder, I have created a subfolder named as "shell-data-processing" using the command:
+- After opening the folder, I have created a subfolder named as "shell-data-processing" using the command:
 ```
 "mkdir shell-data-processing" - this command is used for creating the directory called shell-data-processing in the Powershell.
 ```
-
-1. In the next step, I have changed the directory(44517) into my subfolder(shell-data-processing) using the command:
+- In the next step, I have changed the directory(44517) into my subfolder(shell-data-processing) using the command:
 ```
 "cd shell-data-processing" - this command is used for changing the current directory into the directory named as shell-data-processing in the Powershell.
 ```
 
-1. Later, I have created a new item called "README.md" in my subfolder using the command as:
+- Later, I have created a new item called "README.md" in my subfolder using the command as:
 ```
 "ni README.md" - this command is used for creating a newitem called README.md in my sub folder.
 ```
 
-1. I have used the same command as of the above to create another new item in my subfolder called ".gitignore", for this I have used the command as :
+- I have used the same command as of the above to create another new item in my subfolder called ".gitignore", for this I have used the command as :
 ```
 "ni .gitignore"
 ```
 
-1. In orderr to verify the items in the list and to view all the items in the list , I have used the command as:
+- In orderr to verify the items in the list and to view all the items in the list , I have used the command as:
 ```
 "ls"
 ```
