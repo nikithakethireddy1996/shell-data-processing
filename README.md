@@ -40,14 +40,14 @@ After completing the above process, I have started working with retrieval of tex
 
 - I have used curl to return the page text, the command which I have used is 
 ```
-curl "URL" - This is the command used for returning the page text and in place of "URL" we need to paste the URL which we have copied in the above step and paste in between the quotes.
+curl "https://en.wikipedia.org/wiki/TikTok" - This is the command used for returning the page text and in place of "URL" we need to paste the URL which we have copied in the above step and paste in between the quotes.
 ```
 
 NOTE: While performing this step I have encountered an exception called "WebCmdletWebResponseException" and inorder to overcome that error, I have used the command as "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12" and then followed the above step, and this worked.
 
 - Later, I have used curl to return the page text and to copy the output to a file , the command which I used is:
 ```
-curl "url" -O data.txt - this command is used for creatig a text file named as data.txt and copies the text into that file.
+curl "https://en.wikipedia.org/wiki/TikTok" -O data.txt - this command is used for creatig a text file named as data.txt and copies the text into that file.
 ```
 
 - In order to exit from the Powershell , I have used the command as:
